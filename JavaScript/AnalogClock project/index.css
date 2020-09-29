@@ -1,0 +1,41 @@
+#ClockContainer{
+    position: relative;  /* This becomes important as we can make it more responsive wrt the point */
+    height: 40vw;
+    width: 40vw;
+    background:url(Clock.png) no-repeat;  /* if you don't want the clock to repeat then you should do that */ 
+    background-size: 100%;  /* In order to bring the clock to the middle or center */ 
+    border: 2px solid red ;
+    margin: auto;                   /* To make it more responsive than ever */ 
+}
+#hour , #minute , #second{
+    position: absolute;
+    background: black;
+    border-radius: 20px;
+    transform-origin: bottom;
+
+}
+
+#hour{
+    width: 2%;
+    height: 32%;
+    top: 18.4%;
+    left: 48.9%;
+}
+#minute{
+
+    width: 0.6%;
+    height: 35%;
+    top: 15%;
+    left: 49.6%;
+    opacity: 60%;
+    background-color: blue;
+}
+#second{
+
+    width: 1%;
+    height: 47.5%;
+    top: 3%;
+    left: 49.3%;
+    opacity: 50%;
+    background-color: green;
+}
