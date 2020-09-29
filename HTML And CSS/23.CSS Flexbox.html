@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* In order to use flex box we can do it by this  */
+            display: flex ;
+           
+            /* Flex properties for flex container */
+            /* Comment out the others to fill out this  */
+            flex-direction: row;/*(default value is row) */
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse ;
+            flex-wrap: wrap; /*To make a row and a coloumn if the space is not enough */
+            flex-wrap: wrap-reverse; /* it will wrap it in reverse order */
+            
+            /* IN ORDER TO USE BOTH FLEX DIRECTION AND FLEX WRAP WE CAN DO IS FLEX-FLOW  */
+            flex-flow: row-reverse  wrap;
+
+            /* IF WE WANT TO MAKE THE THINGS TO GO TO THE CENTER THEN WE CAN JUST DO IS JUSTIFY THINGS  */
+
+               justify-content: center; /*Very very important flex property */  
+               justify-content: space-between; /* we can actually divide space equally */
+               justify-content: space-evenly; /* We can actually divide the spaces equally including starting and the end */
+               justify-content: space-around; /* THe space between start and the space in the end will be less than the space in-between */ 
+
+
+               align-items: center; /* It actually puts everything in the center means from both x and y axis */
+
+            align-items:flex-end ; /* it aligns the items in the end of the page but also the end will be in the center in x axis */
+
+            align-items: flex-start; /* Its by default so no need to worry   */
+
+
+        }
+        .item{
+            width: 200px;
+            height: 200px ;
+            background-color: tomato;
+            border: 2px solid green  ;
+            margin: 10px;
+            padding: 3px;
+
+        }
+        #item-1{
+            order: 20; /* The more the order the fartest will be the distance from the start */ /* Higher the order the later it will show up in the container */ 
+        }
+        #item-2{
+            flex-grow: 3; /* It will be three times more bigger than the rest of the items in the list */ /* Negetive numbers are not valid */
+            
+        }
+        #item-3{
+            order: 10;
+            flex-shrink: 2; /* While shrinking it will definitely shrink in size */ 
+        }
+        #item-4{
+            /* By using the flex-basis we can actually increase the size of the element easily  */
+            flex-basis: 320px; /* when flex direction is set to row then flex-basics will control width */ 
+             /* when flex direction is set to coloumn then flex-basics will control height  */ 
+        }
+        #item-5{
+            /* By only typing flex we can actually go for a short hand that is flex:"Grow" "Shrink" "basics" */
+            flex: 2 2 260px ;
+            align-self: flex-start ; /* We can actually set it in the beginning of the page */
+            align-self:  flex-end;  /* We can actualy set it in the end of the page */ 
+            align-self: center; /* It will always occupy the center of the page */ 
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>This is flex box tutorial </h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box </div>
+        <div class="item" id="item-2">Second Box </div>
+        <div class="item" id="item-3">Third Box </div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+    
+</body>
+</html>

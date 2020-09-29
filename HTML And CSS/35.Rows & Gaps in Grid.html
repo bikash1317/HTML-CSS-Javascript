@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid </title>
+    <style>
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 4fr; /* It will initialise the rows(Horizontal)*/
+        grid-auto-rows: 2fr; /* After the 3 rows if there are more rows then we can type this to make them all same */
+        grid-template-columns: repeat(4, 2fr); /* For coloumns discussed in previous video */
+        grid-gap: 1rem;
+    }
+    .box{
+        background-color: red;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+         <!-- Emmet= div.Box{This is a box-$}*10  -->
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>
