@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: lightblue;
+            border-radius: 30px ;
+        }
+        /* Inside of a class we can also define the functions and make changes */
+        .navbar li{
+            float: left;
+            /* In order to remove the bullets we can do is the down below liststyle  */
+            list-style: none;
+            padding: 10px;
+            margin: 9px 25px ;
+        }
+        .navbar ul{
+            /* The background image was missing so we have to set the overflow in the order  */
+            overflow:auto;
+        }
+        .navbar li a{
+            padding: 3px 3px ;
+            /* We can find the underlyning there so in order to stop seeing that underlyning we can do is this  */
+            text-decoration: none; 
+            
+        }
+        /* If we hover around the home or anything then we can do the changes  */
+        .navbar li a:hover{
+           background-color: red;
+        }
+        .searchbox{
+            padding:10px 30px  ;
+            float:right;
+        }
+        .navbar input{
+            border: 3px solid black;
+            border-radius: 12px;
+            padding: 8px;
+            width: 129px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <!-- # give us the symbol of the none links are provided -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="searchbox">
+                    <!-- In order to give a hint we can get a placeholder -->
+                    <input type="text" name="search" id="search" placeholder="Search This Website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

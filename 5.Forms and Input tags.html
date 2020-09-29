@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms and Levels</title>
+</head>
+
+<body>
+    <h2>This is HTML Form looks like</h2>
+    <!-- By this we can tell the computer what backen we are going to use       -->
+    <!-- suppose we are doing a backend using php -->
+    <!-- We are saying that go to backend.php and submit the form -->
+
+    <!-- Level is the best as we can click in the area given or in the name itself  -->
+    <!-- very important as id in text  should be same as given in for in level  -->
+
+    <form action="frontend.php">
+        <label for="name"> Name :</label>
+        <input type="text" name="" id="name">
+    </form>
+
+    <!-- without level what happens see for yourself -->
+
+    <form action="backend.php">
+        <!-- Now we can input various types of input here  -->
+        <!-- We use div to divide two input and anything that is needed -->
+        <!-- Here div is a block element and br is a line element -->
+        <div>
+            Name : <input type="text" name="myName">
+        </div>
+        <hr>
+        <div>
+            Role : <input type="text" name="myRoll">
+        </div>
+        <hr>
+        <div>
+            <!-- if we type input:email then it will appear  -->
+            <!-- name is an attribute that tells the backend about what is  the corresponding value will be  -->
+            Email : <input type="email" name="myEmail">
+        </div>
+        <hr>
+
+        <div>
+            Date : <input type="date" name="myDate" id="">
+        </div>
+        <hr>
+
+        <div>
+            Number = <input type="number" name="myNumber" id="">
+        </div>
+        <hr>
+
+        <div>
+            Are you eligible = <input type="checkbox" name="myEligibility" id="">
+        </div>
+        <hr>
+
+        <div>
+            <!-- while giving radio we have to initialise the same name to everyone there so we have taken MyGender -->
+            Gender = Male <input type="radio" name="MyGender" id=""> FeMale <input type="radio" name="MyGender" id="">
+            Other <input type="radio" name="MyGender" id="">
+        </div>
+        <hr>
+        <!-- This is written without using input function remember -->
+        <div>
+            Write about yourself <br> <textarea name="myText" id="" cols="20" rows="20"></textarea>
+        </div>
+        <hr>
+
+        <!-- here we have used a unique tecknique so that we are not using input and we are using option and doing things  -->
+
+        <div>
+            <label for="car"> Car</label>
+            <select name="myCar" id="car">
+                <option value="ind" > Indica</option>
+                <option value="swt">swift</option>
+                <option value="nno">nano</option>
+                <option value="xml">wow</option>
+            </select>
+        </div>
+        <hr>
+        <!-- To submit the form we can do is this -->
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <hr>
+        <!-- We can also reset the form-->
+        <div>
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

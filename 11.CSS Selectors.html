@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            color: red;
+        }
+        /* Always remember only whose id is yellowElement that will change so do it  */
+        /* We have remembered that # is for ID and . is for class */
+        #yellowElement {
+            color: yellow;
+
+        }
+        .blueElement {
+            color: blue;
+            background-color: black;
+        }
+        span ,footer{
+            color:pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p>This is a paragraph to demonstrate a simple CSS Selectors</p>
+    <p id="yellowElement">This is anather paragraph to demonstrate a simple CSS Selectors</p>
+    <div>
+        <p>
+        <p>This is anather paragraph to demonstrate a simple CSS Selectors</p>
+        </p>
+
+    </div>
+
+    <p class="blueElement">This is a paragraph to demonstrate a simple CSS Selectors</p>
+
+    <span>This is a Span</span>
+    <footer>This is a footer</footer>
+
+</body>
+
+</html>

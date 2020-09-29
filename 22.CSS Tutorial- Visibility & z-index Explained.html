@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility and z-Index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+
+        }
+        /* For z-index we cannot do that by taking the position as static by default the position remains static so we have to change the position there */
+        /* the point to understand is that whose z-index will be more that will be up and whose z-index is less that will be down  */
+        #box1 {
+            position:relative;
+            top: 49px;
+            z-index: 35;
+            background-color: green;
+
+        }
+
+        #box2 {
+            position: relative;
+            top: 39px;
+            z-index: 34;
+            /* If we change the visibility of the boxees then i can be transparent or  something else  */
+            /* default value for visibility is visible */
+            /* If you want to actually hide out the visibility then we leave behind the white space */
+            /*If we don't want the white space then we can do is display =none so that the dispaly can be hidden */
+            
+            
+            /* visibility: hidden; */
+
+            background-color: red;
+
+        }
+
+        #box3 {
+            background-color: blue;
+
+        }
+
+        #box4 {
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .box#box$*4 gives much better so remember the syntax  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

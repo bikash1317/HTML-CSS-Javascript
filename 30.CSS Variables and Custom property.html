@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        /* we are using the Variables  in this so we can see this  */
+        /* Root is like a global variable declaration type so we can access the variables anywhere */
+        :root{
+            --box-color : blue; /* in that case we may apply primary color and danger color */ 
+            --primary-color : blue;
+            --danger-color : red;
+
+        }
+        .box{
+            /* By just changing the --box-color to something else we can actually change the color of the entire box operation  */
+            --box-color : blue; /*After writing in the global we may not write in here*/
+            /* The scope of this variable is only within the compound statement only  */
+            width: 200px ;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2pxx solid red;
+            box-shadow: 3px 3px var(--danger-color);
+            margin: 2px 9px ;
+
+        }
+        .container{
+            display: flex;
+            align-items: center ;
+            justify-content: center; /* To make it horizontally center */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors </title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align-last: center;
+        }
+        /* Only the elements present in the class div then p we can use those elements only  */
+        div p{
+            color: white;
+            background-color: green;
+            font-weight: bold;
+
+        }
+
+        /* Comment out the either to find the difference between the two  */
+        /* now direct inside od div if p is present then we can do this  */
+        div > p{
+            color: blue;
+            background-color: black;
+            font-weight: bolder ;
+        }
+        /* If the paragraph is just after the closing of the div block statement then it is considered as a div + p  */
+        div + p {
+            color: yellow;
+            background-color: green ;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is More on Selectors </h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph </p>
+
+        </div>
+        <p>This is a  paragraph </p>
+    </div>
+    <p>This is a paragraph </p>
+</body>
+</html>

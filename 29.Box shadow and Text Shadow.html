@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: burlywood;
+        /* in box shadow we can see the shadow in the box so we have to set a lighter color in that  */
+        box-shadow: 2px 4px green; /* box-shadow : x-axis y-axis color ;*/
+        /* If we want the shadow to be inside then we have to do is */
+        box-shadow:inset 2px 4px green; /* It will set the shadow inside the box */    
+        /* To give multiple box shadows we can do is this  */
+        box-shadow: 2px 4px green , 4px 6px red ;
+        /* if you want to give a blur in the rradius we can set it to   comment out to see the difference*/
+        box-shadow: 2px 4px 10px red; /* box-shadow : x-axis y-axis blur  color ;*/
+        /* spread radius is basically by which do you want to increase your shadow */
+        /* to write the spread radius we can do is that  */
+        box-shadow: 2px 4px 10px 5px violet; /* box-shadow : x-axis y-axis blur blurarea color ;*/
+         
+    }
+    /* For text shadow we can do is this  */
+    .card h2{
+        text-shadow: 2px 3px grey; 
+        /* For text shadow bluryness then we can do is this  */
+        text-shadow: 2px 3px 2 px white; 
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi tempore mollitia consequuntur, quas voluptates sint expedita ut aliquam corporis officia explicabo ipsam doloribus hic impedit architecto totam esse veniam repellat? Officiis, eum praesentium.</p>
+            
+        </div>
+        <div class="card" id="car-2">
+           <h2>Card2</h2> 
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium laboriosam mollitia commodi autem, cum non repudiandae optio officia hic voluptatum omnis atque delectus soluta tenetur sequi eveniet debitis voluptas quasi illum architecto error iste.</p>
+
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vel recusandae neque ipsum laboriosam, iusto optio fugiat nobis natus at quibusdam? Ratione officia recusandae quia nisi error mollitia? Facilis natus ullam a corrupti vel!</p>
+
+        </div>
+    </div>
+</body>
+</html>

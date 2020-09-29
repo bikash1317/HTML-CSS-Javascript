@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- You should comment out other border to see the effects of each different border  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positions Editing</title>
+    <style>
+        /* There are 5 types : static(default) , absolute , relative, fixed , sticky */
+       .container{
+           border: 2px solid black;
+           background-color: khaki;
+           width : 9000px;
+           height: 9000px;;
+       }
+        .box {
+            /* If you want to place the block it horizontally then we can use display = inline block */
+            display: inline-block;
+            border: 2px solid red;
+            width:100px;
+            height: 150px;
+            margin: 4px;
+        }
+
+        #box3 {
+            position: relative;
+            /* It means relative to its normal position It will change according to its normal position after using relative we can actually use top bottom left right */
+            top: 34px;
+
+
+        }
+        #box2{
+            position : absolute;/*It changes its position according to its parent which is container here */
+            top : 134px; 
+        }
+        #box4{
+            position :fixed ;/*Here if we are making a chat bot then we can use this kind of position image It remains fixed even it we scroll the window*/
+            right: 2px;
+        }
+        #box5{
+             position: sticky; /* If we want to show some important message then w can use sticky so if anyone scrolls down it also scrolls down with the user */
+             top:3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+
+    </div>
+</body>
+
+</html>
