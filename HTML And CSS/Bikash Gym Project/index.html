@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Website Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!-- Download high quality image in free stock image  -->
+    <Style>
+        /* In order to change the entire page we can actually use this stuff  */
+        body {
+            font-family: 'Playball', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            /* Whenever you want to give a background a url then you can actually do this */
+            background: url(young-couple-working-out-gym-600w-723086014.jpg);
+        }
+
+        .header {
+            box-sizing: border-box;
+
+        }
+
+        .left {
+            display: inline-block;
+            border: 2px solid red;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+
+        .mid {
+            /* In order to send it in the middle we hvave to do three things they are display width and margin  */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            border: 2px solid blue;
+        }
+
+        .right {
+            position: absolute;
+            top: 20px;
+            right: 34px;
+            display: inline-block;
+            border: 2px solid green;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 23px;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* If we want to see which class is active or if we want to see that after hovering in this class what we can do is this  */
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(8, 12, 49);
+        }
+
+        .left img {
+            width: 141px;
+        }
+
+        .left p {
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+        }
+
+        .btn {
+            font-family: 'Playball', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 13px 31px;
+            /* Always remember after we put border we can then only put the border radius  */
+            border: 2px solid grey;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+        .container {
+            border: 2px solid green;
+            margin: 146px 86px;
+            padding: 39px 47px;
+            width: 45%;
+            border-radius: 38px;
+        }
+
+        .form.group input {
+            text-align: center;
+            display: block;
+            width: 34px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 3px auto;
+            font-size:small;
+            border-radius: 10px;
+
+        }
+    </Style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="weightlifter-clapping-hands-preparing-workout-600w-1025433106.jpg" alt="">
+            <p>Bikash logo</p>
+
+        </div>
+        <!-- Mid box for Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active"> Home</a></li>
+                <li> <a href="#">About us</a> </li>
+                <li> <a href="#">More Information</a> </li>
+                <li> <a href="#">Fitness Center</a> </li>
+                <li> <a href="#"> Contact Us</a> </li>
+            </ul>
+        </div>
+        <!-- Right box for buttons   -->
+        <div class="right">
+            <button class="btn">
+                Call us Now
+            </button>
+
+            <button class="btn">
+
+                Email Us Now
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Input your name">
+                <input type="text" name="" placeholder="Input your age">
+                <input type="text" name="" placeholder="Input your gender">
+                <input type="text" name="" placeholder="Input your locality">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
